@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rlmdl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="rlmdl.xsd">
+	<model>
+		<manufacturer>Willow Garage</manufacturer>
+		<name>PR2</name>
+		<world id="world">
+			<rotation>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</rotation>
+			<translation>
+				<x>-0.05</x>
+				<y>-0.188</y>
+				<z>0.8022</z>
+			</translation>
+			<g>
+				<x>0</x>
+				<y>0</y>
+				<z>9.8</z>
+			</g>
+		</world>
+		<body id="body0">
+			<ignore/>
+		</body>
+		<frame id="frame0"/>
+		<frame id="frame1"/>
+		
+    
+		<fixed id="fixed0">
+			<frame>
+				<a idref="world"/>
+				<b idref="body0"/>
+			</frame>
+			<rotation>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</rotation>
+			<translation>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</translation>
+		</fixed>
+    <revolute id="joint0">
+      <frame>
+        <a idref="body0"/>
+        <b idref="frame0"/>
+      </frame>
+      <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+      </axis>
+      <max>40.94366927</max>
+      <min>-130.9436693</min>
+      <speed>120</speed>
+    </revolute>
+		
+		
+		<home>
+			<q unit="deg">-22.88</q>
+		</home>
+	</model>
+</rlmdl>
