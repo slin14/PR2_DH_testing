@@ -84,7 +84,7 @@
       <m>6.01769</m>
     </body>
 
-    <fixed id="fixed0">
+   <fixed id="fixed0">
       <frame>
         <a idref="world"/>
         <b idref="body0"/>
@@ -182,9 +182,9 @@
         <b idref="body2"/>
       </frame>
       <rotation>
-        <x>0</x>
+        <x>-90</x>
         <y>0</y>
-        <z>-90</z>
+        <z>0</z>
       </rotation>
       <translation>
         <x>0</x>
@@ -200,7 +200,7 @@
       <axis>
         <x>0</x>
         <y>0</y>
-        <z>1</z>
+        <z>-1</z>
       </axis>
       <max>45.83662361</max>
       <min>-223.4535401</min>
@@ -226,6 +226,7 @@
       <q unit="deg">-22.878</q>
       <q unit="deg">57.794</q>
       <q unit="deg">0</q>
+      <q unit="deg">-116.786</q>
     </home>
   </model>
 </rlmdl>
