@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rlmdl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="rlmdl.xsd">
+  <model>
+    <manufacturer>Willow Garage</manufacturer>
+    <name>PR2</name>
+    <world id="world">
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>-0.05</x>
+        <y>-0.188</y>
+        <z>0.8022</z>
+      </translation>
+      <g>
+        <x>0</x>
+        <y>0</y>
+        <z>9.8</z>
+      </g>
+    </world>
+    <body id="body0">
+      <ignore/>
+      <ignore idref="body1"/>
+    </body>
+    <frame id="frame0"/>
+    <frame id="frame1"/>
+    <body id="body1">
+      <ignore idref="body0"/>
+      <ignore idref="body2"/>
+      <ignore idref="body3"/>
+      <ignore idref="body4"/>
+      <cm>
+        <x>-0.001201</x>
+        <y>0.024513</y>
+        <z>-0.098231</z>
+      </cm>
+      <i>
+        <xx>0.866179142480</xx>
+        <xy>-0.06086507933</xy>
+        <xz>-0.12118061183</xz>
+        <yy>0.87421714893</yy>
+        <yz>-0.05886609911</yz>
+        <zz>0.27353821674</zz>
+      </i>
+      <m>25.799322</m>
+    </body>
+    <frame id="frame2"/>
+    <frame id="frame3"/>
+    <body id="body2">
+      <ignore idref="body0"/>
+      <ignore idref="body1"/>
+      <ignore idref="body3"/>
+      <ignore idref="body4"/>
+      <cm>
+        <x>0.02195</x>
+        <y>-0.02664</y>
+        <z>-0.03127</z>
+      </cm>
+      <i>
+        <xx>0.02105584615</xx>
+        <xy>0.00496704022</xy>
+        <xz>-0.00194808955</xz>
+        <yy>0.02127223737</yy>
+        <yz>0.00110425490</yz>
+        <zz>0.01975753814</zz>
+      </i>
+      <m>2.74988</m>
+    </body>
+    <frame id="frame4"/>
+    <body id="body3">
+      <ignore idref="body0"/>
+      <ignore idref="body1"/>
+      <ignore idref="body2"/>
+      <cm>
+        <x>0.21398</x>
+        <y>-0.01621</y>
+        <z>-0.0002</z>
+      </cm>
+      <i>
+        <xx>0.01537748957</xx>
+        <xy>0.00375711247</xy>
+        <xz>-0.00070852914</xz>
+        <yy>0.0747367044</yy>
+        <yz>-0.0001793645</yz>
+        <zz>0.07608763307</zz>
+      </i>
+      <m>6.01769</m>
+    </body>
+    <frame id="frame5"/>
+    <frame id="frame6"/>
+    <body id="body4">
+      <ignore idref="body0"/>
+      <ignore idref="body1"/>
+      <ignore idref="body2"/>
+      <ignore idref="body3"/>
+      <cm>
+        <x>0.01014</x>
+        <y>0.00032</y>
+        <z>-0.01211</z>
+      </cm>
+      <i>
+        <xx>0.00346541989</xx>
+        <xy>0.00004066825</xy>
+        <xz>0.00043171614</xz>
+        <yy>0.00441606455</yy>
+        <yz>-0.00003968914</yz>
+        <zz>0.00359156824</zz>
+      </i>
+      <m>1.90327</m>
+    </body>
+
+    <fixed id="fixed0">
+      <frame>
+        <a idref="world"/>
+        <b idref="body0"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <revolute id="joint0">
+      <frame>
+        <a idref="body0"/>
+        <b idref="frame0"/>
+      </frame>
+      <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+      </axis>
+      <max>40.94366927</max>
+      <min>-130.9436693</min>
+      <speed>120</speed>
+    </revolute>
+    <fixed id="fixed1">
+      <frame>
+        <a idref="frame0"/>
+        <b idref="frame1"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0.1</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <fixed id="fixed2">
+      <frame>
+        <a idref="frame1"/>
+        <b idref="body1"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <revolute id="joint1">
+      <frame>
+        <a idref="body1"/>
+        <b idref="frame2"/>
+      </frame>
+      <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+      </axis>
+      <max>80</max>
+      <min>-30</min>
+      <speed>120</speed>
+    </revolute>
+    <fixed id="fixed3">
+      <frame>
+        <a idref="frame2"/>
+        <b idref="frame3"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <fixed id="fixed4">
+      <frame>
+        <a idref="frame3"/>
+        <b idref="body2"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <revolute id="joint2">
+      <frame>
+        <a idref="body2"/>
+        <b idref="frame4"/>
+      </frame>
+      <axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </axis>
+      <max>45.83662361</max>
+      <min>-223.4535401</min>
+      <speed>186</speed>
+    </revolute>
+    <fixed id="fixed5">
+      <frame>
+        <a idref="frame4"/>
+        <b idref="body3"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0.4</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <revolute id="joint3">
+      <frame>
+        <a idref="body3"/>
+        <b idref="frame5"/>
+      </frame>
+      <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+      </axis>
+      <max>0</max>
+      <min>-133.000693</min>
+      <speed>189</speed>
+    </revolute>
+    <fixed id="fixed6">
+      <frame>
+        <a idref="frame5"/>
+        <b idref="frame6"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <fixed id="fixed7">
+      <frame>
+        <a idref="frame6"/>
+        <b idref="body4"/>
+      </frame>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
+    <home>
+      <q unit="deg">-22.884</q>
+      <q unit="deg">57.64</q>
+      <q unit="deg">0</q>
+      <q unit="deg">-116.67</q>
+    </home>
+  </model>
+</rlmdl>
