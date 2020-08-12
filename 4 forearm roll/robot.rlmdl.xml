@@ -28,10 +28,6 @@
     <frame id="frame1"/>
     <body id="body1">
       <ignore idref="body0"/>
-      <ignore idref="body2"/>
-      <ignore idref="body3"/>
-      <ignore idref="body4"/>
-      <ignore idref="body5"/>
       <cm>
         <x>-0.001201</x>
         <y>0.024513</y>
@@ -52,9 +48,6 @@
     <body id="body2">
       <ignore idref="body0"/>
       <ignore idref="body1"/>
-      <ignore idref="body3"/>
-      <ignore idref="body4"/>
-      <ignore idref="body5"/>
       <cm>
         <x>0.02195</x>
         <y>-0.02664</y>
@@ -75,8 +68,6 @@
       <ignore idref="body0"/>
       <ignore idref="body1"/>
       <ignore idref="body2"/>
-      <ignore idref="body4"/>
-      <ignore idref="body5"/>
       <cm>
         <x>0.21398</x>
         <y>-0.01621</y>
@@ -99,7 +90,6 @@
       <ignore idref="body1"/>
       <ignore idref="body2"/>
       <ignore idref="body3"/>
-      <ignore idref="body5"/>
       <cm>
         <x>0.01014</x>
         <y>0.00032</y>
@@ -137,8 +127,8 @@
       </i>
       <m>2.57968</m>
     </body>
-    
-    <fixed id="fixed0">
+
+   <fixed id="fixed0">
       <frame>
         <a idref="world"/>
         <b idref="body0"/>
@@ -190,7 +180,7 @@
         <b idref="body1"/>
       </frame>
       <rotation>
-        <x>0</x>
+        <x>90</x>
         <y>0</y>
         <z>0</z>
       </rotation>
@@ -207,8 +197,8 @@
       </frame>
       <axis>
         <x>0</x>
-        <y>1</y>
-        <z>0</z>
+        <y>0</y>
+        <z>1</z>
       </axis>
       <max>80</max>
       <min>-30</min>
@@ -236,7 +226,7 @@
         <b idref="body2"/>
       </frame>
       <rotation>
-        <x>0</x>
+        <x>-90</x>
         <y>0</y>
         <z>0</z>
       </rotation>
@@ -252,9 +242,9 @@
         <b idref="frame4"/>
       </frame>
       <axis>
-        <x>1</x>
+        <x>0</x>
         <y>0</y>
-        <z>0</z>
+        <z>-1</z>
       </axis>
       <max>45.83662361</max>
       <min>-223.4535401</min>
@@ -266,12 +256,12 @@
         <b idref="body3"/>
       </frame>
       <rotation>
-        <x>0</x>
+        <x>90</x>
         <y>0</y>
         <z>0</z>
       </rotation>
       <translation>
-        <x>0.4</x>
+        <x>0</x>
         <y>0</y>
         <z>0</z>
       </translation>
@@ -283,8 +273,8 @@
       </frame>
       <axis>
         <x>0</x>
-        <y>1</y>
-        <z>0</z>
+        <y>0</y>
+        <z>1</z>
       </axis>
       <max>0</max>
       <min>-133.000693</min>
@@ -313,7 +303,7 @@
       </frame>
       <rotation>
         <x>0</x>
-        <y>0</y>
+        <y>-90</y>
         <z>0</z>
       </rotation>
       <translation>
@@ -324,9 +314,9 @@
     </fixed>
     <revolute id="joint4">
       <axis>
-        <x>1</x>
+        <x>0</x>
         <y>0</y>
-        <z>0</z>
+        <z>1</z>
       </axis>
       <frame>
         <a idref="body4"/>
@@ -357,7 +347,7 @@
       <q unit="deg">57.794</q>
       <q unit="deg">0</q>
       <q unit="deg">-116.786</q>
-      <q unit="deg">0.017</q>
+      <q unit="deg">0.01719</q>
     </home>
   </model>
 </rlmdl>
