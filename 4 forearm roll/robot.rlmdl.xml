@@ -180,8 +180,8 @@
         <b idref="body1"/>
       </frame>
       <rotation>
-        <x>90</x>
-        <y>0</y>
+        <x>-90</x>
+        <y>90</y>
         <z>0</z>
       </rotation>
       <translation>
@@ -212,7 +212,7 @@
       <rotation>
         <x>0</x>
         <y>0</y>
-        <z>0</z>
+        <z>0.4</z>
       </rotation>
       <translation>
         <x>0</x>
@@ -256,7 +256,7 @@
         <b idref="body3"/>
       </frame>
       <rotation>
-        <x>-90</x>
+        <x>0</x>
         <y>0</y>
         <z>0</z>
       </rotation>
@@ -293,7 +293,7 @@
       <translation>
         <x>0</x>
         <y>0</y>
-        <z>0</z>
+        <z>-0.321</z>
       </translation>
     </fixed>
     <fixed id="fixed7">
@@ -302,9 +302,9 @@
         <b idref="body4"/>
       </frame>
       <rotation>
-        <x>0</x>
-        <y>-90</y>
-        <z>0</z>
+        <x>90</x>
+        <y>0</y>
+        <z>90</z>
       </rotation>
       <translation>
         <x>0</x>
