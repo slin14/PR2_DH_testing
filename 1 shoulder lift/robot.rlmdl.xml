@@ -44,6 +44,7 @@
       <m>25.799322</m>
     </body>
     <frame id="frame2"/>
+    <frame id="frame3"/>
 
     <fixed id="fixed0">
       <frame>
@@ -81,7 +82,7 @@
         <b idref="frame1"/>
       </frame>
       <rotation>
-        <x>0</x>
+        <x>-90</x>
         <y>0</y>
         <z>0</z>
       </rotation>
@@ -97,7 +98,7 @@
         <b idref="body1"/>
       </frame>
       <rotation>
-        <x>90</x>
+        <x>0</x>
         <y>0</y>
         <z>90</z>
       </rotation>
@@ -121,9 +122,30 @@
       <min>-30</min>
       <speed>120</speed>
     </revolute>
+    <fixed id="fixed3">
+      <frame>
+        <a idref="frame2"/>
+        <b idref="frame3"/>
+      </frame>
+      <rotation>
+        <x>90</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <translation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </translation>
+    </fixed>
     <home>
       <q unit="deg">-22.91831181</q>
       <q unit="deg">57.29577951</q>
+      <q unit="deg">0</q>
+      <q unit="deg">-117.29377951</q>
+      <q unit="deg">0</q>
+      <q unit="deg">-5.729577951</q>
+      <q unit="deg">0</q>
     </home>
   </model>
 </rlmdl>
